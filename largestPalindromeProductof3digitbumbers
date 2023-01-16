@@ -1,0 +1,16 @@
+def is_palindrome(n): 
+    s = str(n) 
+    return s == s[::-1] 
+
+
+def largestpalindromeproduct(n): 
+    maxproduct = 0
+    for i in range(10(n-1), 10n): 
+        for j in range(10(n-1), 10n): 
+            product = i * j 
+            if ispalindrome(product) and product > maxproduct: 
+                maxproduct = product 
+    return max_product 
+
+
+print(largestpalindromeproduct(3))
